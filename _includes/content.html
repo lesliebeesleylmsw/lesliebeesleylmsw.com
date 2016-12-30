@@ -1,0 +1,101 @@
+<div id="home">
+  <p>I believe that we all have the capacity to heal. Whether you are experiencing the pain of grief, divorce, trauma or struggling with other challenges that life can bring, it is my honor to walk beside you through your journey to heal. I draw from a variety of evidence based treatment approaches and practice from a strengths based and client centered perspective. Together we will determine which approach is best suited for your therapeutic needs and goals.</p>
+</div>
+
+<div id="credentials" class="hidden">
+  <h3>Credentials</h3>
+  <p>I received my graduate degree from University of Oklahoma, during this period I completed my Internship providing counseling at a Women's Prison. Post graduate experience includes providing individual and family therapy in community mental health, hospice grief counseling, and providing therapy and facilitating groups in the child welfare setting.</p>
+</div>
+
+<div id="safeaffordable" class="hidden">
+  <h3>Safe &amp; Affordable</h3>
+  <p>I provide a safe, confidential space, and I offer convenient appointment times including early mornings, during the lunch break, evenings, and Saturdays. I offer a sliding scale fee in an effort to make mental health services affordable for all.</p>
+</div>
+
+<div id="specialties" class="hidden">
+  <h3>Specialties &amp; Issues</h3>
+  <p>
+  Trauma and PTSD
+  Grief
+  Parenting
+  Issues
+  Adoption
+  Anxiety
+  Coping Skills
+  Depression
+  Divorce
+  Domestic Violence
+  Family Conflict
+  Life Transitions
+  Self Esteem
+  Stress
+  Women's Issues
+  Sexuality
+  Bisexual
+  Gay
+  Lesbian
+  Client Focus
+
+  Age
+  Children (6 to 10)
+  Preteens / Tweens (11 to 13)
+  Adolescents / Teenagers (14 to 19)
+  Adults
+  Elders (65+)
+  Treatment Approach
+
+  Treatment Orientation
+  Cognitive Behavioral (CBT)
+  EMDR
+  Eclectic
+  Family Systems
+  Feminist
+  Motivational Interviewing
+  Person-Centered
+  Strength Based
+  Trauma Focused
+  Modality
+  Individuals
+  Family
+  Group
+  </p>
+</div>
+
+<div class="content-links">
+  <a id="homeLink" href="/" class="home" onclick="activateContent(this);">Home</a>
+  <a id="credentialsLink" href="#credentials" class="credentials" onclick="activateContent(this);">Credentials</a>
+  <a id="safeaffordableLink" href="#safeaffordable" class="safeaffordable" onclick="activateContent(this);">Safe/Affordable</a>
+  <a id="specialtiesLink" href="#specialties" class="specialties" onclick="activateContent(this);">Specialties</a>
+</div>
+
+<script>
+
+  var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+  
+  function activateContent(el) {
+    hideAllContent();
+    document.getElementById(el.className).className = "";
+    el.style.display = "none";
+  }
+
+  function hideAllContent() {
+    document.getElementById("home").className = "hidden";
+    document.getElementById("credentials").className = "hidden";
+    document.getElementById("safeaffordable").className = "hidden";
+    document.getElementById("specialties").className = "hidden";
+
+    document.getElementById("homeLink").style.display = "";
+    document.getElementById("credentialsLink").style.display = "";
+    document.getElementById("safeaffordableLink").style.display = "";
+    document.getElementById("specialtiesLink").style.display = "";
+  }
+
+  DOMReady(function () {
+    var iPageId = location.hash.trim() || "#home";
+    iPageId = iPageId.substr(1) + "Link";
+    activateContent(document.getElementById(iPageId));
+  });
+
+</script>
+
+
