@@ -4,7 +4,8 @@ baseurl: ''
 compass:
   logo: "/images/officetree.png"
   author: Leslie Beesley, LMSW
-  tagline: Adults · Children · Family
+  tagline: Clinical Social Work/Therapist
+  tagline2: Adults · Children · Family
   description: 
   include_content: true
   include_analytics: false
