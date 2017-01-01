@@ -147,15 +147,6 @@ hr {
 }
 
 /*** footer ***/
-footer {
-	/*
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	height: 20px;
-	*/
-}
-
 footer h1 {
 	color: $text-color;
 	font-family: FontAwesome;
@@ -177,7 +168,13 @@ footer .fa-ul.main-list {
 	padding: 0 5px;
 }
 
-
+.copyright {
+	text-align:center;
+	margin-top:1em;
+}
+.copyright .all-rights-reserved {
+	margin-left:1em;
+}
 #hours ul {
 	list-style: none;
 }

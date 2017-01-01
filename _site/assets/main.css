@@ -116,14 +116,6 @@ hr {
   background-image: -o-linear-gradient(left, transparent, #46433A, transparent); }
 
 /*** footer ***/
-footer {
-  /*
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 20px;
-  */ }
-
 footer h1 {
   color: #46433A;
   font-family: FontAwesome;
@@ -141,6 +133,13 @@ footer .fa-ul.main-list {
   font-size: 0.6em;
   line-height: 0.6em;
   padding: 0 5px; }
+
+.copyright {
+  text-align: center;
+  margin-top: 1em; }
+
+.copyright .all-rights-reserved {
+  margin-left: 1em; }
 
 #hours ul {
   list-style: none; }
