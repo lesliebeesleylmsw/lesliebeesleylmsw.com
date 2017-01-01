@@ -156,11 +156,6 @@ footer {
 	*/
 }
 
-footer hr {
-	width:100%;
-	display:none;
-}
-
 footer h1 {
 	color: $text-color;
 	font-family: FontAwesome;
@@ -184,11 +179,116 @@ footer .fa-ul.main-list {
 
 /*** media queries ***/
 /* X-Small devices (phones, 480px and up) */
+@media (min-width: 320px) {
+	/* wrapper stays 480px wide past 480px wide and is kept centered */
+	.wrapper {
+		width: 320px;
+		margin: $wrapper-margin-top auto 0 auto;
+	}
+
+	.nav.main-nav {
+		line-height:2em;
+	}
+	
+	.logo-container {
+		display:inline-block;
+		width:20%;
+	}
+	.author-container {
+		display:inline-block;
+		width: 75%;
+	}
+	.logo {
+		width: 32px;
+		height: 32px;
+		vertical-align:middle;
+	}
+	.author-container h1 {
+		font-size: 1.5em;
+		margin-left:-10px;
+	}
+
+	/*** tagline ***/
+	.tagline-container {
+		margin-top: 0.5em;
+		margin-bottom:1.5em;
+	}
+	.tagline-container p {
+		font-size: 1em;
+		margin-bottom: 0.15em;
+		margin-top:0.15em;
+	}
+	.tagline-container p.tagline {
+		margin-bottom: 0.15em;
+	}
+
+	.content h1 {
+		font-size: 1.5em;
+		margin:0.5em 0;
+	}
+
+	footer {
+		font-size:0.9em;
+	}
+	footer h1 {
+		font-size:1.4em;
+	}
+
+}
+
+/* X-Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
 	/* wrapper stays 480px wide past 480px wide and is kept centered */
 	.wrapper {
 		width: 480px;
 		margin: $wrapper-margin-top auto 0 auto;
+	}
+
+	.nav.main-nav {
+		line-height:2.5em;
+	}
+	
+	
+
+	.logo-container {
+		display:inline-block;
+		width:20%;
+	}
+	.author-container {
+		display:inline-block;
+		width: 75%;
+	}
+	.logo {
+		width: 64px;
+		height: 64px;
+		vertical-align:middle;
+	}
+	.author-container h1 {
+		font-size: 2em;
+		margin-left:0px;
+	}
+
+	/*** tagline ***/
+	.tagline-container {
+		margin-top: 0.5em;
+		margin-bottom:1.5em;
+	}
+	.tagline-container p {
+		font-size: 1.3em;
+		margin-bottom: 2em;
+	}
+	.tagline-container p.tagline {
+		margin-bottom:1em;
+	}
+
+	.content h1 {
+		font-size: 1.5em;
+		margin: 0.67em 0;
+	}
+
+	footer h1 {
+		font-size:1.5em;
+		margin: 0.67em 0;
 	}
 }
 
@@ -206,6 +306,23 @@ footer .fa-ul.main-list {
 		float: left;
 		width: 42%;
 		text-align: right;
+	}
+
+	.logo-container {
+		display:block;
+		width:100%;
+	}
+	.author-container {
+		display:block;
+		width: 100%;
+	}
+	.logo {
+		width: 96px;
+		height: 96px;
+		vertical-align:middle;
+	}
+	.author-container h1 {
+		font-size: 2.8em;
 	}
 
 	.row {
@@ -244,5 +361,15 @@ footer .fa-ul.main-list {
 	}
 	footer .main-list-item {
 		font-size:1.2em;
+	}
+
+	.content h1 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
+
+	footer h1 {
+		font-size:2em;
+		margin: 0.67em 0;
 	}
 }
