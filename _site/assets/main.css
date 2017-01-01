@@ -142,6 +142,21 @@ footer .fa-ul.main-list {
   line-height: 0.6em;
   padding: 0 5px; }
 
+#hours ul {
+  list-style: none; }
+
+#hours ul li span.day {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  margin-right: 5px; }
+
+#hours ul li span.time {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  margin-left: 5px; }
+
 /*** media queries ***/
 /* X-Small devices (phones, 480px and up) */
 @media (min-width: 320px) {
