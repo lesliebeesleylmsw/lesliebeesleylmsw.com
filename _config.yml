@@ -8,7 +8,7 @@ compass:
   tagline2: Adults · Children · Family
   description: 
   include_content: true
-  include_analytics: false
+  include_analytics: true
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
