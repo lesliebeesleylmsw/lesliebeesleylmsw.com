@@ -5,7 +5,7 @@
   <meta name="google-site-verification" content="FTkw-JhIouxUKrE5Bc5QjNjhBkJ-OQG0002PD6MW_3s" />
   <meta name="google-site-verification" content="EzFDkJTNc_OtyiOCS6bbvqbNeTF1GIVW-hi3jK__5rU" />
   
-  <title>{{ site.compass.author }} &#8226; {{ site.compass.tagline | strip_html }}</title>
+  <title>{{ page.title }} - {{ site.compass.meta_title }}</title>
 
   <link rel="apple-touch-icon" href="{{ site.compass.logo }}"/>
   <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="{{ site.url }}/favicon.ico" />
@@ -18,13 +18,13 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
   <meta name="author" content="{{ site.compass.author }}">
-  <meta name="description" content="{{ site.compass.tagline }}"/>
+  <meta name="description" content="{{ page.description }}"/>
 
-  <meta property="og:title" content="{{ site.compass.tagline }}"/>
+  <meta property="og:title" content="{{ page.title }} - {{ site.compass.meta_title }}"/>
   <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.compass.logo }}"/>
-  <meta property="og:description" content="{{ site.compass.description }}"/>
-  <meta property="og:site_name" content="{{ site.compass.tagline }}">
+  <meta property="og:description" content="{{ page.description }}"/>
+  <meta property="og:site_name" content="{{ site.compass.meta_title }}">
 
   {% if site.compass.include_analytics %}
   {% include analytics.html %}

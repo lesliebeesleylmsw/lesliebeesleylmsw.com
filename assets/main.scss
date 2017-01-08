@@ -64,6 +64,19 @@ a:hover {
 	color: #F1EED9;
 }
 
+#callToAction {
+	margin:2em;
+}
+#callToAction h2 {
+	margin:0.5em 1em;
+	text-align:left;
+	font-size: 1em;
+}
+#callToAction h3 {
+	margin:0.5em 1em;
+	text-align:right;
+	font-size: 1.15em;
+}
 /*** main content list ***/
 .main-list-item {
 	font-weight: bold;
@@ -147,7 +160,7 @@ hr {
 }
 
 /*** footer ***/
-footer h1 {
+footer h2 {
 	color: $text-color;
 	font-family: FontAwesome;
     font-weight: normal;
@@ -247,7 +260,7 @@ footer .fa-ul.main-list {
 	footer {
 		font-size:0.9em;
 	}
-	footer h1 {
+	footer h2 {
 		font-size:1.4em;
 	}
 
@@ -303,7 +316,7 @@ footer .fa-ul.main-list {
 		margin: 0.67em 0;
 	}
 
-	footer h1 {
+	footer h2 {
 		font-size:1.5em;
 		margin: 0.67em 0;
 	}
@@ -370,7 +383,7 @@ footer .fa-ul.main-list {
 		margin-left: 50%;
 		padding: 0;
 	}
-	footer h1 {
+	footer h2 {
 		margin-left: 25px;
 	}
 	footer .fa-ul.main-list {
@@ -385,7 +398,7 @@ footer .fa-ul.main-list {
 		margin: 0.67em 0;
 	}
 
-	footer h1 {
+	footer h2 {
 		font-size:2em;
 		margin: 0.67em 0;
 	}
