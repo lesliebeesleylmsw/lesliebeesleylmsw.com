@@ -1,5 +1,5 @@
 ---
-url: https://lesliebeesleylmsw.github.io
+url: https://www.lesliebeesleylmsw.com
 baseurl: ''
 compass:
   logo: "/images/logo-sm.png"
@@ -13,3 +13,5 @@ compass:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
