@@ -10,8 +10,3 @@ compass:
   meta_title: Trauma, Grief, Parenting Therapist - Lawrence KS - Leslie Beesley,LMSW
   include_content: true
   include_analytics: true
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

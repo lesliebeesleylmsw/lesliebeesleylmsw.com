@@ -1,28 +1,38 @@
 ---
 title: Specialties
 description: Leslie Beesley LMSW therapy specialties include trauma, PTSD, grief, and parenting. Therapy approaches are person-centered and include CBT, TF-CBT, and EMDR.
-layout: contentbase
 ---
+{% extends "./layouts/default.njk" %}
+
+{% block content %}
+
 <h1>Specialties &amp; Areas of Practice</h1>
 <div id="issues" class="row">
+  <h3>Specialties</h3>
   <div class="col-half">
-    <h3>Specialties</h3>
     <ul>
       <li>Parenting</li>
-      <li>Trauma and PTSD</li>
-      <li>Grief</li>
+      <li>Child or Adolescent</li>
+      <li>Family Conflict</li>
     </ul>
-    
   </div>
-  <div class="col-half col-right">
-    <h3>Areas of Practice</h3>
+</div>
+<div id="issues" class="row">
+  <h3>Areas of Practice</h3>
+  <div class="col-half">
     <ul>
       <li>Anxiety</li>
+      <li>Grief</li>
+      <li>Trauma and PTSD</li>
+      <li>Behavioral Issues</li>
       <li>Coping Skills</li>
       <li>Depression</li>
-      <li>Divorce</li>
-      <li>Family Conflict</li>
-      <li>Life Transitions</li>
+    </ul>
+  </div>
+  <div class="col-half col-right">
+    <ul>
+      <li>Peer Relationships</li>
+      <li>School Issues</li>
       <li>Self Esteem</li>
       <li>Stress</li>
       <li>Women's Issues</li>
@@ -30,14 +40,12 @@ layout: contentbase
   </div>
 </div>
 <div id="issues" class="row">
+  <h3>Treatment Orientation</h3>
   <div class="">
-    <h3>Treatment Orientation</h3>
     <ul>
       <li>Cognitive Behavioral Therapy (CBT)</li>
       <li>EMDR</li>
-      <li>Eclectic</li>
       <li>Family Systems</li>
-      <li>Feminist</li>
       <li>Motivational Interviewing</li>
       <li>Person-Centered</li>
       <li>Strength Based</li>
@@ -46,4 +54,7 @@ layout: contentbase
   </div>
 </div>
 
-{% include calltoaction.html %}
+
+  {% include "./assets/partials/calltoaction.njk" %}
+
+{% endblock %}

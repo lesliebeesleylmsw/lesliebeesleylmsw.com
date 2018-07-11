@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  {% include "../assets/partials/head.njk" %}
   <body>
 
     <div class="wrapper">
@@ -25,17 +25,17 @@
         <main>
           {% if site.compass.include_content %}
           <div class="content">
-            {{ content }}
+            {% block content %}{% endblock %}
           </div>
           {% endif %}
         </main>
 
         <nav>
-          {% include nav.html %}
+          {% include "../assets/partials/nav.njk" %}
         </nav>
 
         <footer>
-          {% include footer.html %}
+          {% include "../assets/partials/footer.njk" %}
         </footer>
     </div>
 
